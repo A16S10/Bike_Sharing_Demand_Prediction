@@ -1,6 +1,8 @@
 # Urban Bike Rental Prediction Project
 Welcome to the Urban Bike Rental Prediction project repository! In response to the growing need for enhanced mobility comfort in urban cities, rental bikes have been introduced. Ensuring the availability and accessibility of these bikes at the right time is crucial, minimizing waiting times and addressing the challenge of maintaining a stable supply throughout Seoul City.
 
+https://github.com/A16S10/Bike_Sharing_Demand_Prediction/assets/110720116/04e6f541-504d-4abf-b9cf-7b5572694908
+
 # Project Objective
 The primary goal of this project is to accurately predict the demand for rental bikes during different time periods and various climatic conditions in Seoul City. We employ various machine learning regression algorithms to create a robust prediction model. The objective is to forecast bike demand accurately in the near future, allowing for proactive arrangements to meet the expected demand.
 
