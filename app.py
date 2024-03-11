@@ -27,23 +27,26 @@ def predict_Bike_Demand(Hour, Temperature, Wind_Speed, Visibility, Rainfall, Sno
 # Streamlit code
 st.set_page_config(page_title='Bike Demand Predictor', page_icon="🚲")
 
-# Custom CSS for styling
+
 st.markdown(
     """
     <style>
-    body {
-        background-color: black;
+    .header {
+        background-color: Black;
         color: white;
-        font-size: 16px;
+        padding: 10px;
+        font-size: 24px;
+        text-align: center;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
+st.markdown('<p class="header">Bike Demand Predictor</p>', unsafe_allow_html=True)
 
-# Streamlit code
-st.title('Bike Demand Predictor')
+
+
 
 Hour = st.selectbox('Hour', list(range(24)), index=0)
 Temperature = st.number_input('Temperature', min_value=-100.0, max_value=100.0, value=0.0, step=0.1)
@@ -54,7 +57,7 @@ Snowfall = st.number_input('Snowfall', min_value=0.0, max_value=10.0, value=0.0,
 Holiday = st.radio('Holiday', ('Yes', 'No'))
 Functioning_Day = st.radio('Functioning Day', ('Yes', 'No'))
 Month = st.selectbox('Month', list(range(1,12)), index=0)
-# Month = st.number_input('Month', min_value=1, max_value=12, value=1, step=1)
+
 Day = st.selectbox('Day', list(range(1,31)), index=0)
 
 if st.button('Predict'):
